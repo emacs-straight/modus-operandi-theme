@@ -1,10 +1,10 @@
-;;; modus-operandi-theme.el --- Accessible light theme (WCAG AAA) -*- lexical-binding:t -*-
+;;; modus-operandi-theme.el --- Accessible light theme (WCAG AAA) [DEPRECATED] -*- lexical-binding:t -*-
 
 ;; Copyright (c) 2019-2021  Free Software Foundation, Inc.
 
 ;; Author: Protesilaos Stavrou <info@protesilaos.com>
 ;; URL: https://gitlab.com/protesilaos/modus-themes
-;; Version: 0.13.1
+;; Version: 0.13.2
 ;; Package-Requires: ((emacs "26.1") (modus-themes "1.2.4"))
 ;; Keywords: faces, theme, accessibility
 
@@ -44,7 +44,7 @@
 
 
 
-(require 'modus-themes)
+(if t (require 'modus-themes)) ;; Don't require it during compilation!
 
 (eval-and-compile
   (let ((msg "Package `modus-operandi-theme' is obsolete; use the new `modus-themes'"))
